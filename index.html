@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhushan— Creative Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-logo">BHUSHAN PAWAR</div>
+  <div class="loader-track"><div class="loader-fill" id="loaderFill"></div></div>
+  <div class="loader-pct"><span id="loaderPct">0</span>%</div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Nav -->
+<nav id="nav">
+  <div class="nav-logo">BHUSHAN PAWAR<span class="accent">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+  <button class="hamburger" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" class="mlink">Home</a></li>
+    <li><a href="#about" class="mlink">About</a></li>
+    <li><a href="#work" class="mlink">Work</a></li>
+    <li><a href="#skills" class="mlink">Skills</a></li>
+    <li><a href="#contact" class="mlink">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ======= HERO ======= -->
+<section id="home">
+  <div class="hero-bg-text">PORTFOLIO</div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for Work
+    </div>
+    <h1 class="hero-heading">
+      <span class="line">Creative</span>
+      <span class="line accent-line">Developer</span>
+      <span class="line">& Designer</span>
+    </h1>
+    <p class="hero-sub">
+      I craft digital experiences at the intersection of<br/>
+      <em>bold design</em> and <em>clean code</em>.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">
+        <span>View My Work</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Let's Talk</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="5">0</span><span class="accent">+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="1">0</span><span class="accent">+</span>
+        <span class="stat-label">Years Exp.</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="4">0</span><span class="accent">+</span>
+        <span class="stat-label">Internship</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="avatar-ring ring1"></div>
+    <div class="avatar-ring ring2"></div>
+    <div class="avatar-ring ring3"></div>
+    <div class="avatar-wrap">
+      <svg viewBox="0 0 300 300" class="avatar-svg">
+        <defs>
+          <radialGradient id="ag" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#ff6b35"/>
+            <stop offset="100%" stop-color="#1a1a2e"/>
+          </radialGradient>
+          <clipPath id="ac"><circle cx="150" cy="150" r="140"/></clipPath>
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="url(#ag)" clip-path="url(#ac)"/>
+        <circle cx="150" cy="120" r="55" fill="rgba(255,255,255,0.1)"/>
+        <ellipse cx="150" cy="265" rx="92" ry="78" fill="rgba(255,255,255,0.07)"/>
+        <circle cx="150" cy="108" r="36" fill="rgba(255,107,53,0.25)" stroke="rgba(255,107,53,0.45)" stroke-width="1"/>
+        <circle cx="139" cy="104" r="5" fill="rgba(255,255,255,0.55)"/>
+        <circle cx="161" cy="104" r="5" fill="rgba(255,255,255,0.55)"/>
+        <path d="M139 121 Q150 131 161 121" stroke="rgba(255,255,255,0.45)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="150" y="200" text-anchor="middle" fill="rgba(255,107,53,0.5)" font-size="11" font-family="monospace">&lt;dev /&gt;</text>
+      </svg>
+      <div class="avatar-badge">ER.</div>
+    </div>
+    <div class="float-card card-code">
+      <span class="card-icon">⌨️</span>
+      <div><div class="card-title-sm">React.js</div><div class="card-sub">Frontend Dev</div></div>
+    </div>
+    <div class="float-card card-design">
+      <span class="card-icon">🎨</span>
+      <div><div class="card-title-sm">Python Developer</div><div class="card-sub">Flask</div></div>
+    </div>
+    <div class="float-card card-star">
+      <span class="card-icon">⭐</span>
+      <div><div class="card-title-sm">5.0 Rating</div><div class="card-sub">Top Rated</div></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-bar"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>React</span><span class="dot">✦</span>
+    <span>Python</span><span class="dot">✦</span>
+    <span>Node.js</span><span class="dot">✦</span>
+    <span>C++</span><span class="dot">✦</span>
+    <span>Python Developer</span><span class="dot">✦</span>
+    <span>MongoDB</span><span class="dot">✦</span>
+    <span>Tailwind</span><span class="dot">✦</span>
+    <span>Flask</span><span class="dot">✦</span>
+    <span>React</span><span class="dot">✦</span>
+    <span>MongoDB</span><span class="dot">✦</span>
+    <span>Node.js</span><span class="dot">✦</span>
+    <span>Sql</span><span class="dot">✦</span>
+    <span>Html</span><span class="dot">✦</span>
+    <span>MongoDB</span><span class="dot">✦</span>
+    <span>Css</span><span class="dot">✦</span>
+    <span>Js</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ======= ABOUT ======= -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="section-label">// about me</p>
+        <h2 class="section-heading">I Build Things<br/><em>People Love</em></h2>
+        <p class="about-body">Hey! I'm Bhushan — a full-stack developer and Python Developer with 1+ years of experience turning complex problems into elegant digital solutions.</p>
+        <p class="about-body">I specialize in building fast, accessible, AI Integrated and visually stunning web applications.</p>
+        <div class="about-tags">
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Detail Oriented</span>
+          <span class="tag">Fast Learner</span>
+          <span class="tag">Team Player</span>
+        </div>
+        <a href="resume.pdf" class="btn-primary" target="_blank">
+          <span>Download CV</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </div>
+      <div class="about-cards reveal">
+        <div class="acard highlight">
+          <div class="acard-icon">🎓</div>
+          <div class="acard-label">Education</div>
+          <div class="acard-val">BE Computer Science</div>
+          <div class="acard-sub">PDEA's, 2027</div>
+        </div>
+        <div class="acard">
+          <div class="acard-icon">💼</div>
+          <div class="acard-label">Experience</div>
+          <div class="acard-val">1+ Years</div>
+          <div class="acard-sub">Full Stack Dev</div>
+          <div class="acard-sub">Python Dev</div>
+        </div>
+        <div class="acard">
+          <div class="acard-icon">🌍</div>
+          <div class="acard-label">Location</div>
+          <div class="acard-val">Pune</div>
+          <div class="acard-sub">Open to Work</div>
+        </div>
+        <div class="acard highlight">
+          <div class="acard-icon">🚀</div>
+          <div class="acard-label">Projects Done</div>
+          <div class="acard-val">3+</div>
+          <div class="acard-sub">Globally</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= WORK ======= -->
+<section id="work">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">// selected work</p>
+      <h2 class="section-heading">Featured <em>Projects</em></h2>
+    </div>
+    <div class="projects">
+
+      <div class="proj reveal">
+        <div class="proj-num">01</div>
+        <div class="proj-info">
+          <div class="proj-badges"><span class="proj-badge">WebSite</span><span class="proj-badge">2023</span></div>
+          <h3 class="proj-title">Leaf Disease Detection</h3>
+          <p class="proj-desc">Leaf Disease Detection is a web-based system that allows users to upload or capture images of plant leaves to identify possible diseases. The application analyzes the leaf image using predefined image processing techniques or stored disease data and then displays the detected disease name along with its symptoms and treatment suggestions.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JS</span><span>PYTHON</span><span>DJANGO</span><span>CNN</span><span>SQLite3</span></div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
+        <div class="proj-vis pv-bars" style="display:flex;">
+          <div class="bar" style="height:60%;opacity:1;"></div>
+          <div class="bar" style="height:80%;opacity:0.8;"></div>
+          <div class="bar" style="height:45%;opacity:0.6;"></div>
+          <div class="bar" style="height:90%;opacity:1;"></div>
+          <div class="bar" style="height:65%;opacity:0.7;"></div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-num">02</div>
+        <div class="proj-info">
+          <div class="proj-badges"><span class="proj-badge">AI</span><span class="proj-badge">2025</span></div>
+          <h3 class="proj-title">REELIFY-Ai Reel generator</h3>
+          <p class="proj-desc">Reelify is an AI-powered web application that allows users to upload multiple images and provide custom text to generate short reel-style videos automatically. The system intelligently combines the uploaded images with smooth transitions, background effects, and synchronized AI-generated voice narration based on the provided text.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JS</span><span>PYTHON</span><span>FLASK</span><span>SQL</span><span>ELEONELAB</span></div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
+        <div class="proj-vis pv-shop" style="display:flex;">
+          <div class="shop-card"></div>
+          <div class="shop-card"></div>
+          <div class="shop-card"></div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-num">03</div>
+        <div class="proj-info">
+          <div class="proj-badges"><span class="proj-badge">Web App</span><span class="proj-badge">2025</span></div>
+          <h3 class="proj-title">studybuddy</h3>
+          <p class="proj-desc">StudyBuddy is a web-based platform that allows students to upload, share, download, and manage study notes in a centralized system. Users can create an account, log in securely, and upload their academic notes to make them publicly accessible to other students.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JS</span><span>FLASK</span><span>SQL</span><span>RESTAPI</span></div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
+        <div class="proj-vis pv-phone" style="display:flex;">
+          <div class="phone">
+            <div class="ph-row"></div>
+            <div class="ph-row s"></div>
+            <div class="ph-circle"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= SKILLS ======= -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">// what i know</p>
+      <h2 class="section-heading">My <em>Skills</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat reveal">
+        <div class="skill-cat-name">Frontend</div>
+        <div class="skill-bars">
+          <div><div class="sbar-label"><span>React</span><span>50%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="50"></div></div></div>
+          <div><div class="sbar-label"><span>HTML / CSS</span><span>98%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="98"></div></div></div>
+          <div><div class="sbar-label"><span>JAVAScript</span><span>70%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="70"></div></div></div>
+          <div><div class="sbar-label"><span>Animations</span><span>40%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="40"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <div class="skill-cat-name">Backend</div>
+        <div class="skill-bars">
+          <div><div class="sbar-label"><span>Node.js</span><span>30%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="30"></div></div></div>
+          <div><div class="sbar-label"><span>Flask</span><span>75%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="75"></div></div></div>
+          <div><div class="sbar-label"><span>SQL</span><span>60%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="60"></div></div></div>
+          <div><div class="sbar-label"><span>RESTApi</span><span>30%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="30"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <div class="skill-cat-name">Design</div>
+        <div class="skill-bars">
+          <div><div class="sbar-label"><span>Figma</span><span>40%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="40"></div></div></div>
+          <div><div class="sbar-label"><span>Canva</span><span>50%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="50"></div></div></div>
+          <div><div class="sbar-label"><span>Adobe Photoshop</span><span>78%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="78"></div></div></div>
+          <div><div class="sbar-label"><span>Behance.Net</span><span>30%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="30"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tech-row reveal">
+      <div class="ti" title="React">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 9.861A2.139 2.139 0 1 0 12 14.139 2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.12.133.468a23.53 23.53 0 0 0 1.363 3.578l.101.213-.101.213a23.307 23.307 0 0 0-1.363 3.578l-.133.468zM5.317 8.95c-2.674.751-4.315 1.9-4.315 3.046 0 1.145 1.641 2.294 4.315 3.046a24.95 24.95 0 0 1 1.182-3.046A24.752 24.752 0 0 1 5.317 8.95zm12.675 7.305-.133-.468a23.257 23.257 0 0 0-1.364-3.577l-.101-.213.101-.213a23.42 23.42 0 0 0 1.364-3.578l.133-.468.473.119c3.517.889 5.535 2.398 5.535 4.14s-2.018 3.25-5.535 4.139l-.473.12zm-.491-4.259c.48 1.039.877 2.06 1.182 3.046 2.675-.752 4.315-1.901 4.315-3.046 0-1.146-1.641-2.294-4.315-3.046a24.788 24.788 0 0 1-1.182 3.046z"/></svg>
+      </div>
+      <div class="ti" title="JavaScript">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+      </div>
+      <div class="ti" title="Node.js">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L1.677,18.507c-0.57-0.329-0.922-0.945-0.922-1.604V6.921c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/></svg>
+      </div>
+      <div class="ti" title="Figma">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019h3.117V8.981H8.148zm4.588 5.171c0-2.476 2.014-4.49 4.49-4.49s4.49 2.014 4.49 4.49-2.014 4.49-4.49 4.49-4.49-2.014-4.49-4.49zm1.471 0c0 1.665 1.355 3.019 3.019 3.019s3.019-1.355 3.019-3.019-1.354-3.019-3.019-3.019-3.019 1.354-3.019 3.019z"/></svg>
+      </div>
+      <div class="ti" title="MongoDB">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg>
+      </div>
+      <div class="ti" title="Git">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TESTIMONIALS ======= -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">// kind words</p>
+      <h2 class="section-heading">What Clients <em>Say</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard reveal">
+        <div class="tcard-quote">"</div>
+        <p>Alex delivered our dashboard in record time with exceptional quality. The animations and attention to detail blew us away. 10/10 would hire again.</p>
+        <div class="tcard-author">
+          <div class="t-avatar av1">JD</div>
+          <div><div class="t-name">James Doe</div><div class="t-role">CEO, TechStartup</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard-quote">"</div>
+        <p>Incredible work on our e-commerce platform. Clean code, pixel-perfect design, and always communicative. Alex is our go-to developer.</p>
+        <div class="tcard-author">
+          <div class="t-avatar av2">SM</div>
+          <div><div class="t-name">Sara Miller</div><div class="t-role">Founder, LuxBrand</div></div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard-quote">"</div>
+        <p>Working with Alex transformed our app's UX completely. User retention went up 40% after the redesign. Absolutely worth every penny.</p>
+        <div class="tcard-author">
+          <div class="t-avatar av3">RP</div>
+          <div><div class="t-name">Ryan Park</div><div class="t-role">Product Lead, Mindful</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="section-label">// get in touch</p>
+        <h2 class="section-heading">Let's Build<br/><em>Something Great</em></h2>
+        <p class="contact-sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+        <div class="cinfo">
+          <div class="cinfo-item">
+            <span class="cinfo-icon">✉️</span>
+            <div><div class="cinfo-label">Email</div><a href="mailto:bhushanpawar57788@gmail.com" class="cinfo-val">bhushanpawar57788@gmail.com</a></div>
+          </div>
+          <div class="cinfo-item">
+            <span class="cinfo-icon">📍</span>
+            <div><div class="cinfo-label">Location</div><div class="cinfo-val">Pune | Maharashtra | India</div></div>
+          </div>
+          <div class="cinfo-item">
+            <span class="cinfo-icon">📱</span>
+            <div><div class="cinfo-label">Phone</div><a href="tel:+919322903701" class="cinfo-val">+919322903701</a></div>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/bp486142-wq?tab=repositories" class="soc-btn" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/bhushan-pawar-9b19a5270/" class="soc-btn" target="_blank">LinkedIn</a>
+          <a href="#" class="soc-btn">Twitter</a>
+          <a href="#" class="soc-btn">Dribbble</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="cform" id="contactForm">
+          <div class="form-row">
+            <div class="fgroup"><label>Your Name</label><input type="text" name="name" placeholder="Bhushan Pawar" required/></div>
+            <div class="fgroup"><label>Your Email</label><input type="email" name="email" placeholder="Bhushan123@example.com" required/></div>
+          </div>
+          <div class="fgroup"><label>Subject</label><input type="text" name="subject" placeholder="Project Inquiry" required/></div>
+          <div class="fgroup"><label>Message</label><textarea rows="5" name="message" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn-primary full-width">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll reply within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">Bhushan<span class="accent">.P</span></div>
+    <p class="footer-copy">© 2025 Bhushan | Crafted with ❤️ and lots of ☕</p>
+    <button id="backToTop">↑ Top</button>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
