@@ -178,7 +178,11 @@ document.getElementById("contactForm").addEventListener("submit", async function
   submitBtn.disabled = true;
 
   try {
-    const response = await fetch("https://portfolio-web-5kh3.onrender.com/send-email", {
+    const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      ? 'http://localhost:5000/send-email'
+      : 'https://portfolio-web-5kh3.onrender.com/send-email';
+
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
