@@ -178,7 +178,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   submitBtn.disabled = true;
 
   try {
-    const response = await fetch("https://portfolio-backend-srr9.onrender.com/send-email", {
+    const response = await fetch("https://portfolio-web-hawg.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
